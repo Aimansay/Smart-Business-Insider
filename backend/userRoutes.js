@@ -1,0 +1,23 @@
+const express = require('express')
+const router = express.Router()
+const {registerUser, loginUser, addItem, getInventory, updateItem, deleteItem, addBill, getBills, getAllBills, changePassword, changeUsername, changeEmail, forgetPassword, verifyEmail, newPassword, getMe} = require('./controllers/userController')
+const { protect } = require('./middleware/authMiddleware')
+
+router.post('/', registerUser)
+router.post('/login', loginUser)
+router.post('/addItem/:id', addItem)
+router.get('/Inventory/:id', getInventory)
+router.put('/:id/updateItem', updateItem)
+router.delete('/removeItem/:id', deleteItem)
+router.post('/:id/addBill', addBill)
+router.get('/:id/billing', getBills)
+router.get('/:id/allBills', getAllBills)
+router.put('/:id/changePassword', changePassword)
+router.put('/:id/changeUsername', changeUsername)
+router.put('/:id/changeEmail', changeEmail)
+router.post('/:id/verifyEmail', verifyEmail)
+router.put('/:id/forgetPassword', forgetPassword)
+router.put('/:id/newPassword', newPassword)
+router.get('/me', protect, getMe)
+
+module.exports = router
