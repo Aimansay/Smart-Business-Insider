@@ -1,9 +1,8 @@
 # Smart-Business-Insider
 
 ## Group Members
-1. Haroon Riaz (Group Leader)
-2. Ahmed Raza Warraich
-3. Umair Ahmed
+1. Um e Aiman (Group Leader)
+2. Rabia Yousaf
 
 ## Run Instructions
 
