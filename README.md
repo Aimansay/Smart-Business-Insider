@@ -1,7 +1,7 @@
 # Smart-Business-Insider
 
 ## Group Members
-1. Um e Aiman (Group Leader)
+1. Um e Aeman (Group Leader)
 2. Rabia Yousaf
 
 ## Run Instructions
